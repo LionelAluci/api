@@ -50,11 +50,14 @@ button:hover {
 .team-card img {
   height: 150px;
   object-fit: contain;
-  background-image: url('equipos.png');
+  background-image: url('xd.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .team-card .card-body {
-  background-color: #fff5e6;
+  background-color: #eacbff;
 }
 
 .card-title {
