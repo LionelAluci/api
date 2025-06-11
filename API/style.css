@@ -12,27 +12,50 @@ h1.premier-title {
   text-shadow: 1px 1px 2px rgba(126, 126, 126, 0.1);
 }
 
+.title-logo {
+  width: 200px;  
+  height: 200px;  
+  object-fit: contain;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.7)); 
+}
+
 #searchInput {
-  max-width: 500px;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  flex-grow: 1;
+  border-radius: 50px 0 0 50px;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.15);
+  transition: box-shadow 0.3s ease;
+  outline: none;
+  box-shadow: inset 0 0 12px #ffcc00;
+  background-color: #222;
+  color: #fff;
 }
 
 button {
-  display: block;
-  margin: 0 auto 2rem auto;
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
-  background-color: #007bff;
-  color: white;
+  background: #ffcc00;
   border: none;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease;
+  border-radius: 0 50px 50px 0;
+  width: 55px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 0 12px #ffcc00;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  color: #222;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background: #e6b800;
+  box-shadow: 0 0 20px #e6b800;
+  color: #111;
+}
+
+#teamsContainer {
+      display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .team-card {
@@ -40,17 +63,26 @@ button:hover {
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  cursor: pointer;
+  color: #fff;
 }
 
 .team-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(255, 204, 0, 0.7);
+  background: rgba(255, 204, 0, 0.15);
+  color: #222;
+  font-weight: 700;
 }
 
 .team-card img {
   height: 150px;
   object-fit: contain;
-  background-image: url('xd.png');
+  background-image: url('xd1.png');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -58,6 +90,13 @@ button:hover {
 
 .team-card .card-body {
   background-color: #eacbff;
+}
+.team-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.6));
 }
 
 .card-title {
