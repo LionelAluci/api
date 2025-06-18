@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const API_URL = 'https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League';
+  const apixd = 'https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League';
   const teamsContainer = document.getElementById('teamsContainer');
   const searchInput = document.getElementById('searchInput');
 
   let teams = [];
 
-  fetch(API_URL)
+  fetch(apixd)
     .then(res => res.json())
     .then(data => {
       teams = data.teams;
